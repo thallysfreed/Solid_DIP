@@ -1,8 +1,9 @@
 package com.silth.model;
 
-public class MySqlProduct {
+public class MySqlProduct implements IDb{
 
-    public String getProduct(String produto){
-        return "Exibindo produto "+produto;
+    @Override
+    public String getProduct(String product) {
+        return "Mysql->Exibindo produto "+product;
     }
 }
